@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 0 20px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .form-group {
+        width: 100%;
+    }
+}
+
+/* ---   HEADER   -------------------------------------- */
+
+.header {
+    display: flex;
+    margin-bottom: 20px;
+}
+.header-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.about-self {
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.about-self h1 {
+    margin-bottom: 10px;
+}
+.about-self h4 {
+    margin: 10px 0;
+}
+.about-self p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: dashed;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+}
+a:visited {
+    color: grey;
+}
+
+
+/* ---   MAIN   ------------------------------------------------------------- */
+
+
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-green {
+    background: #e5ffe7;
+}
+.bg-red {
+    background: #ffe5e5;
+}
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.card h2 {
+    margin-bottom: 10px;
+}
+.main-list {
+    padding: 0 20px;
+}
+.main-list li {
+    color: #86898f;
+    margin-bottom: 10px
+}
+.table {
+    width: 100%;
+}
+.table td:nth-child(2) , td:nth-child(3) {
+    color: #86898f;
+}
+.network-list {
+    padding: 0;
+    list-style: none;
+}
+.network-list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.contact h2 {
+    text-align: center;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+.form-group input , .form-group textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    color: black;
+    padding: 15px 0 10px;
+}
+.row {
+    display: flex;
+}
+.row .form-group {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.row > .form-group:nth-child(1) {
+    margin-right: 20px;
+}
+.btn {
+    background-color: #111;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
